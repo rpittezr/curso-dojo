@@ -17,3 +17,18 @@
 .section-spacer {
 	padding-block: 3rem;
 }
+
+@media (max-width: 680px) {
+	.flex-mobile-column-reverse {
+		flex-direction: column-reverse;
+	}
+	.flex-mobile-column {
+		flex-direction: column;
+	}
+	.list-mobile {
+		width: 100%;
+	}
+	.section-spacer {
+		padding-block: 0;
+	}
+}

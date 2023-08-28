@@ -39,16 +39,16 @@
 				<i></i>
 			</div>
 			<div class="container">
-				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5">
-					<div class="col-6 col-md">
+				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5 flex-mobile-column-reverse">
+					<div class="col-md-6">
 						<span class="fs-5 fw-bold clr-primary-muffed">Curso</span>
 						<h1 class="display-1 fw-bold">Dojo</h1>
 						<p class="lead fw-semibold clr-black-400 pb-5">
 							Domine a arte das Artes Marciais com nosso curso especializado!
 						</p>
-						<button class="btn btn-primary fs-4">Confira nosso material!</button>
+						<a href="#howitworks"><button class="btn btn-primary fs-4">Confira nosso material!</button></a>
 					</div>
-					<div class="col-6 col-md">
+					<div class="col-md-6">
 						<img src="src/images/bg-hero.jpg" alt="" class="img-fluid rounded" />
 					</div>
 				</div>
@@ -56,18 +56,22 @@
 		</header>
 		<main>
 			<section class="about container section-spacer">
-				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5">
-					<div class="col">
-						<img src="src/images/img-2.jpg" alt="" class="img-fluid rounded" />
-					</div>
-					<div class="col">
-						<div class="row">
-							<h2 class="fw-bold display-5">Sobre o que é o curso <span class="clr-primary-muffed">Dojo</span>?</h2>
-							<p class="clr-black-600">
-								O conteúdo do curso abrange desde os fundamentos até técnicas avançadas. Vídeos, material de leitura e
-								recursos interativos enriquecem sua compreensão, garantindo que você não apenas aprenda os movimentos,
-								mas também compreenda os princípios subjacentes e a filosofia do Dojo.
-							</p>
+				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5 flex-wrap">
+					<div class="row flex-mobile-column">
+						<div class="col col-md-6">
+							<img src="src/images/img-2.jpg" alt="" class="img-fluid rounded" />
+						</div>
+						<div class="col col-md-6">
+							<div class="row">
+								<h2 class="fw-bold display-5 my-3">
+									Sobre o que é o curso <span class="clr-primary-muffed">Dojo</span>?
+								</h2>
+								<p class="clr-black-600">
+									O conteúdo do curso abrange desde os fundamentos até técnicas avançadas. Vídeos, material de leitura e
+									recursos interativos enriquecem sua compreensão, garantindo que você não apenas aprenda os movimentos,
+									mas também compreenda os princípios subjacentes e a filosofia do Dojo.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -77,43 +81,45 @@
 					<div class="row my-5">
 						<h2 class="fw-bold display-5">No Dojo você aprenderá sobre</h2>
 					</div>
-					<div class="row gap-5">
-						<div class="col text-center">
+					<div class="row">
+						<div class="col-md-6 text-center">
 							<img src="src/images/img-2.jpg" alt="" class="w-50 rounded-circle" />
 							<h3 class="my-4 fw-bold">Judô</h3>
 						</div>
-						<div class="col text-center">
+						<div class="col-md-6 text-center">
 							<img src="src/images/img-4.jpg" alt="" class="w-50 rounded-circle" />
 							<h3 class="my-4 fw-bold">Aikidô</h3>
 						</div>
 					</div>
-					<div class="row gap-5">
-						<div class="col text-center">
+					<div class="row">
+						<div class="col-md-6 text-center">
 							<img src="src/images/img-1.jpg" alt="" class="w-50 rounded-circle" />
 							<h3 class="my-4 fw-bold">Karatê</h3>
 						</div>
-						<div class="col text-center">
+						<div class="col-md-6 text-center">
 							<img src="src/images/img-5.jpg" alt="" class="w-50 rounded-circle" />
 							<h3 class="my-4 fw-bold">Kendô</h3>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="howitworks container section-spacer">
+			<section class="howitworks container section-spacer" id="howitworks">
 				<div class="d-flex flex-column justify-content-between align-items-center">
 					<div class="row">
-						<h2 class="fw-bold display-5 mt-5 mb-3">
-							Entenda mais sobre<br />
-							a <span class="clr-primary-muffed">experiência</span> do seu curso!
-						</h2>
-						<p class="clr-black-600 py-2 w-50">
-							No mundo moderno, as possibilidades de aprendizado expandem-se além dos limites físicos. Com orgulho,
-							apresentamos nosso Curso online Dojo, uma oportunidade única de explorar as ricas tradições e técnicas das
-							artes marciais no conforto da sua casa.
-						</p>
+						<div class="col-md-6">
+							<h2 class="fw-bold display-5 mt-5 mb-3">
+								Entenda mais sobre<br />
+								a <span class="clr-primary-muffed">experiência</span> do seu curso!
+							</h2>
+							<p class="clr-black-600 py-2">
+								No mundo moderno, as possibilidades de aprendizado expandem-se além dos limites físicos. Com orgulho,
+								apresentamos nosso Curso online Dojo, uma oportunidade única de explorar as ricas tradições e técnicas
+								das artes marciais no conforto da sua casa.
+							</p>
+						</div>
 					</div>
 					<div class="row w-100 mt-5">
-						<div class="col-4 p-0">
+						<div class="col-md-4 p-0 list-mobile">
 							<div class="list-group" id="list-tab" role="tablist">
 								<a
 									class="list-group-item list-group-item-action fw-bold active"
@@ -153,7 +159,7 @@
 								>
 							</div>
 						</div>
-						<div class="col-8">
+						<div class="col-md-8">
 							<div class="tab-content" id="nav-tabContent">
 								<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
 									<div class="row gap-5">
@@ -210,44 +216,47 @@
 			</section>
 			<section class="whatismartialarts container section-spacer">
 				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5">
-					<div class="col-6 col-md">
-						<h2 class="fw-bold display-5">Introdução</h2>
-						<p class="clr-black-600 py-2">
-							A maioria das artes marciais tradicionais japonesas, também conhecidas como budo, possui origens que
-							remontam a períodos proto-históricos. O Yabusame, uma prática de tiro com arco montado a cavalo, teve seus
-							primórdios no século VII. Com a ascensão da classe guerreira no final do século XII, os samurais, membros
-							desta classe, se dedicavam a várias disciplinas como kenjutsu (a arte da espada), iaijutsu (simulação de
-							combate com espadas), jujutsu (combate desarmado), kyujutsu (tiro com arco japonês), sojutsu (uso de
-							lanças), bajutsu (equitação), e suijutsu (natação). Com o tempo, essas práticas se tornaram
-							estandardizadas e eram ensinadas em escolas, tradição que continuou mesmo após o término do período feudal
-							durante a era Edo (1600-1868).
-						</p>
-						<p class="clr-black-600 py-2">
-							Após a abolição do sistema de classes sociais durante a era Edo e até a Restauração Meiji em 1868, as
-							classes guerreiras, que haviam exercido controle sobre agricultores, artesãos e comerciantes (o sistema
-							shi-no-ko-sho), desapareceram. Com a adoção de armamentos militares modernos, o engajamento em algumas
-							dessas disciplinas começou a declinar. Em 1895, após a Guerra Sino-Japonesa, uma organização nacional
-							conhecida como "Dai Nippon Budo Kai" (Associação de Artes Marciais do Japão) emergiu para centralizar as
-							artes marciais e considerar sua possível inclusão no sistema educacional. Isso resultou no renascimento de
-							muitas dessas práticas.
-						</p>
-						<p class="clr-black-600 py-2">
-							A partir de abril de 2012, aos alunos dos últimos três anos do ensino fundamental, independentemente de
-							gênero, foi solicitado que escolhessem uma das três artes marciais - sumô, judô ou kendô - como parte do
-							currículo escolar.
-						</p>
-					</div>
-					<div class="col-6 col-md">
-						<!-- Youtube Video Import -->
-						<iframe
-							width="560"
-							height="515"
-							src="https://www.youtube.com/embed/vApvRSHtu-s?si=dKPxffIZw_iNdJne"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
+					<div class="row">
+						<div class="col-md-6 col-md">
+							<h2 class="fw-bold display-5">Introdução</h2>
+							<p class="clr-black-600 py-2">
+								A maioria das artes marciais tradicionais japonesas, também conhecidas como budo, possui origens que
+								remontam a períodos proto-históricos. O Yabusame, uma prática de tiro com arco montado a cavalo, teve
+								seus primórdios no século VII. Com a ascensão da classe guerreira no final do século XII, os samurais,
+								membros desta classe, se dedicavam a várias disciplinas como kenjutsu (a arte da espada), iaijutsu
+								(simulação de combate com espadas), jujutsu (combate desarmado), kyujutsu (tiro com arco japonês),
+								sojutsu (uso de lanças), bajutsu (equitação), e suijutsu (natação). Com o tempo, essas práticas se
+								tornaram estandardizadas e eram ensinadas em escolas, tradição que continuou mesmo após o término do
+								período feudal durante a era Edo (1600-1868).
+							</p>
+							<p class="clr-black-600 py-2">
+								Após a abolição do sistema de classes sociais durante a era Edo e até a Restauração Meiji em 1868, as
+								classes guerreiras, que haviam exercido controle sobre agricultores, artesãos e comerciantes (o sistema
+								shi-no-ko-sho), desapareceram. Com a adoção de armamentos militares modernos, o engajamento em algumas
+								dessas disciplinas começou a declinar. Em 1895, após a Guerra Sino-Japonesa, uma organização nacional
+								conhecida como "Dai Nippon Budo Kai" (Associação de Artes Marciais do Japão) emergiu para centralizar as
+								artes marciais e considerar sua possível inclusão no sistema educacional. Isso resultou no renascimento
+								de muitas dessas práticas.
+							</p>
+							<p class="clr-black-600 py-2">
+								A partir de abril de 2012, aos alunos dos últimos três anos do ensino fundamental, independentemente de
+								gênero, foi solicitado que escolhessem uma das três artes marciais - sumô, judô ou kendô - como parte do
+								currículo escolar.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<!-- Youtube Video Import -->
+							<iframe
+								width="560"
+								height="515"
+								src="https://www.youtube.com/embed/vApvRSHtu-s?si=dKPxffIZw_iNdJne"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								class="w-100 my-5"
+							></iframe>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -259,20 +268,22 @@
 					<div class="container-fluid bg-light">
 						<div class="row container mx-auto">
 							<div class="d-flex justify-content-center gap-5">
-								<div class="col">
-									<img src="src/images/img-3.jpg" alt="" class="img-fluid" />
-								</div>
-								<div class="col py-5">
-									<h3 class="fw-bold clr-primary-muffed">Judô</h3>
-									<p class="clr-black-600 py-2">
-										"Judô," que significa "caminho suave," surgiu da antiga arte de jujutsu, focada em técnicas
-										desarmadas. As escolas Tenshin Shinyo e Kito formaram a base do judô Kodokan moderno, moldado por
-										Kano Jigoro (1860-1938). Ele adaptou regras para permitir agarramentos e quedas. O "judô-gi" lembra
-										o traje de karatê, mas com material resistente. Diferentemente do karatê, o judô não permite chutes.
-										O esporte ganhou popularidade global. A Federação Internacional de Judô foi criada em 1952. Tóquio
-										hospedou o primeiro Campeonato Mundial em 1956. Tornou-se esporte olímpico em 1964 (homens) e mais
-										tarde para mulheres. Atualmente, mais de 5 milhões praticam judô.
-									</p>
+								<div class="row">
+									<div class="col-md-6">
+										<img src="src/images/img-3.jpg" alt="" class="img-fluid" />
+									</div>
+									<div class="col-md-6 py-5">
+										<h3 class="fw-bold clr-primary-muffed">Judô</h3>
+										<p class="clr-black-600 py-2">
+											"Judô," que significa "caminho suave," surgiu da antiga arte de jujutsu, focada em técnicas
+											desarmadas. As escolas Tenshin Shinyo e Kito formaram a base do judô Kodokan moderno, moldado por
+											Kano Jigoro (1860-1938). Ele adaptou regras para permitir agarramentos e quedas. O "judô-gi"
+											lembra o traje de karatê, mas com material resistente. Diferentemente do karatê, o judô não
+											permite chutes. O esporte ganhou popularidade global. A Federação Internacional de Judô foi criada
+											em 1952. Tóquio hospedou o primeiro Campeonato Mundial em 1956. Tornou-se esporte olímpico em 1964
+											(homens) e mais tarde para mulheres. Atualmente, mais de 5 milhões praticam judô.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -280,17 +291,20 @@
 					<div class="container-fluid bg-dark text-white">
 						<div class="row container mx-auto">
 							<div class="d-flex justify-content-center gap-5">
-								<div class="col py-5">
-									<h3 class="fw-bold clr-primary-muffed">Aikidô</h3>
-									<p class="py-2">
-										O aikidô surge do Aiki jujutsu da escola Daito, fundada por Minamoto Yoshimitsu (1045-1127). Ueshiba
-										Morihei (1883-1970) é seu criador contemporâneo. Comparado ao judô, o aikidô evita agarrar e mantém
-										distância entre os lutadores. Técnicas focam fraquezas nos punhos e braços do oponente. Não há
-										competições no aikidô; autodefesa é primordial. Popular entre mulheres e profissionais de segurança.
-									</p>
-								</div>
-								<div class="col">
-									<img src="src/images/img-4.jpg" alt="" class="img-fluid" />
+								<div class="row flex-mobile-column-reverse">
+									<div class="col-md-6 py-5">
+										<h3 class="fw-bold clr-primary-muffed">Aikidô</h3>
+										<p class="py-2">
+											O aikidô surge do Aiki jujutsu da escola Daito, fundada por Minamoto Yoshimitsu (1045-1127).
+											Ueshiba Morihei (1883-1970) é seu criador contemporâneo. Comparado ao judô, o aikidô evita agarrar
+											e mantém distância entre os lutadores. Técnicas focam fraquezas nos punhos e braços do oponente.
+											Não há competições no aikidô; autodefesa é primordial. Popular entre mulheres e profissionais de
+											segurança.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<img src="src/images/img-4.jpg" alt="" class="img-fluid" />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -298,20 +312,23 @@
 					<div class="container-fluid bg-light">
 						<div class="row container mx-auto">
 							<div class="d-flex justify-content-center gap-5">
-								<div class="col">
-									<img src="src/images/img-1.jpg" alt="" class="img-fluid" />
-								</div>
-								<div class="col py-5">
-									<h3 class="fw-bold clr-primary-muffed">Karatê</h3>
-									<p class="clr-black-600 py-2">
-										O karatedo, "caminho das mãos vazias", originou-se há mil anos na China, chegando a Okinawa para
-										defesa sem armas e, posteriormente, ao Japão com Funakoshi Gichin nos anos 1920. Todas as partes do
-										corpo são potenciais armas, mas defesa contra socos e chutes é crucial. Treinamento inclui golpes em
-										makiwara (poste revestido de palha). Em competições, protetores são usados para evitar acidentes;
-										socos e chutes em região da cabeça são evitados. Kata avalia forma e concentração. Instrutores
-										enfatizam atitudes e código de conduta. Mais mulheres praticam karatê atualmente, que, como artes
-										marciais chinesas e coreanas, ganha popularidade global. Praticantes estimados em 50 milhões.
-									</p>
+								<div class="row flex-mobile-column">
+									<div class="col-md-6">
+										<img src="src/images/img-1.jpg" alt="" class="img-fluid" />
+									</div>
+									<div class="col-md-6 py-5">
+										<h3 class="fw-bold clr-primary-muffed">Karatê</h3>
+										<p class="clr-black-600 py-2">
+											O karatedo, "caminho das mãos vazias", originou-se há mil anos na China, chegando a Okinawa para
+											defesa sem armas e, posteriormente, ao Japão com Funakoshi Gichin nos anos 1920. Todas as partes
+											do corpo são potenciais armas, mas defesa contra socos e chutes é crucial. Treinamento inclui
+											golpes em makiwara (poste revestido de palha). Em competições, protetores são usados para evitar
+											acidentes; socos e chutes em região da cabeça são evitados. Kata avalia forma e concentração.
+											Instrutores enfatizam atitudes e código de conduta. Mais mulheres praticam karatê atualmente, que,
+											como artes marciais chinesas e coreanas, ganha popularidade global. Praticantes estimados em 50
+											milhões.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -319,22 +336,24 @@
 					<div class="container-fluid bg-dark text-white">
 						<div class="row container mx-auto">
 							<div class="d-flex justify-content-center gap-5">
-								<div class="col py-5">
-									<h3 class="fw-bold clr-primary-muffed">Kendô</h3>
-									<p class="py-2">
-										Entre os samurais, o uso da espada era considerado um dos principais elementos das artes marciais.
-										Talvez devido a sua tradição, o kendô (bastão ou vara japonesa) atribui uma elevada ênfase no
-										comportamento ritual sobre o dojo, e as suas práticas devem ser altamente regulamentadas.
-									</p>
-									<p class="py-2">
-										Com o estabelecimento da Federação Geral de Kendô do Japão, em 1952, o kendô ressurgiu como esporte
-										e foi introduzido no currículo escolar nas escolas. A ‘espada’ usada no kendô, chamada de shinai, é
-										feita de quatro estacas de bambu. Ela é razoavelmente leve e elaborada para se evitar contusões
-										graves durante as práticas.
-									</p>
-								</div>
-								<div class="col">
-									<img src="src/images/img-5.jpg" alt="" class="img-fluid" />
+								<div class="row flex-mobile-column-reverse">
+									<div class="col-md-6 py-5">
+										<h3 class="fw-bold clr-primary-muffed">Kendô</h3>
+										<p class="py-2">
+											Entre os samurais, o uso da espada era considerado um dos principais elementos das artes marciais.
+											Talvez devido a sua tradição, o kendô (bastão ou vara japonesa) atribui uma elevada ênfase no
+											comportamento ritual sobre o dojo, e as suas práticas devem ser altamente regulamentadas.
+										</p>
+										<p class="py-2">
+											Com o estabelecimento da Federação Geral de Kendô do Japão, em 1952, o kendô ressurgiu como
+											esporte e foi introduzido no currículo escolar nas escolas. A ‘espada’ usada no kendô, chamada de
+											shinai, é feita de quatro estacas de bambu. Ela é razoavelmente leve e elaborada para se evitar
+											contusões graves durante as práticas.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<img src="src/images/img-5.jpg" alt="" class="img-fluid" />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -348,49 +367,55 @@
 					</div>
 					<div class="row mx-auto">
 						<div class="d-flex justify-content-center gap-5">
-							<div class="col py-5">
-								<h3>Prática Individual e Treinamento Adicional</h3>
-								<p>
-									Além das aulas em grupo, reserve tempo para treinar individualmente. Repetir movimentos, aprimorar
-									posturas e fortalecer seu corpo por meio de exercícios complementares contribui para o aperfeiçoamento
-									das habilidades. Utilize vídeos tutoriais e recursos online recomendados pelos instrutores para obter
-									orientação em sua prática individual.
-								</p>
-							</div>
-							<div class="col">
-								<img src="src/images/img-7.jpg" alt="" class="img-fluid" />
+							<div class="row flex-mobile-column-reverse">
+								<div class="col-md-6 py-5">
+									<h3>Prática Individual e Treinamento Adicional</h3>
+									<p>
+										Além das aulas em grupo, reserve tempo para treinar individualmente. Repetir movimentos, aprimorar
+										posturas e fortalecer seu corpo por meio de exercícios complementares contribui para o
+										aperfeiçoamento das habilidades. Utilize vídeos tutoriais e recursos online recomendados pelos
+										instrutores para obter orientação em sua prática individual.
+									</p>
+								</div>
+								<div class="col-md-6">
+									<img src="src/images/img-7.jpg" alt="" class="img-fluid" />
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row mx-auto">
 						<div class="d-flex justify-content-center gap-5">
-							<div class="col py-5">
-								<h3>Estudo e Pesquisa</h3>
+							<div class="row flex-mobile-column-reverse">
+								<div class="col-md-6 py-5">
+									<h3>Estudo e Pesquisa</h3>
 
-								<p>
-									Explore a rica história e filosofia das artes marciais através da leitura e pesquisa. Livros, artigos
-									e documentários oferecem insights sobre as origens, os mestres e as diferentes abordagens das artes
-									marciais. Compreender a filosofia subjacente pode aprofundar seu entendimento e enriquecer sua
-									prática.
-								</p>
-							</div>
-							<div class="col">
-								<img src="src/images/img-8.jpg" alt="" class="img-fluid" />
+									<p>
+										Explore a rica história e filosofia das artes marciais através da leitura e pesquisa. Livros,
+										artigos e documentários oferecem insights sobre as origens, os mestres e as diferentes abordagens
+										das artes marciais. Compreender a filosofia subjacente pode aprofundar seu entendimento e enriquecer
+										sua prática.
+									</p>
+								</div>
+								<div class="col-md-6">
+									<img src="src/images/img-8.jpg" alt="" class="img-fluid" />
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row mx-auto">
 						<div class="d-flex justify-content-center gap-5">
-							<div class="col py-5">
-								<h3>Autodisciplina e Mentalidade de Crescimento</h3>
-								<p>
-									Cultive uma mentalidade de crescimento, esteja aberto a feedback construtivo e não tenha medo de
-									enfrentar desafios. A autodisciplina é essencial; estabeleça metas realistas para monitorar seu
-									progresso e ajustar suas estratégias de aprendizado conforme necessário.
-								</p>
-							</div>
-							<div class="col">
-								<img src="src/images/img-6.jpg" alt="" class="img-fluid" />
+							<div class="row flex-mobile-column-reverse">
+								<div class="col py-5">
+									<h3>Autodisciplina e Mentalidade de Crescimento</h3>
+									<p>
+										Cultive uma mentalidade de crescimento, esteja aberto a feedback construtivo e não tenha medo de
+										enfrentar desafios. A autodisciplina é essencial; estabeleça metas realistas para monitorar seu
+										progresso e ajustar suas estratégias de aprendizado conforme necessário.
+									</p>
+								</div>
+								<div class="col">
+									<img src="src/images/img-6.jpg" alt="" class="img-fluid" />
+								</div>
 							</div>
 						</div>
 					</div>
