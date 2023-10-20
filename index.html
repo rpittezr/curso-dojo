@@ -1,693 +1,910 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Curso Dojo</title>
+		<title>Dojo Shimahara</title>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Inter:wght@200;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="src/style/css/style.css" />
+		<link rel="stylesheet" href="src/css/main.css" />
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="src/style/css/custom.css" />
-		<link rel="stylesheet" href="src/style/css/animations.css" />
+		<link rel="stylesheet" href="src/css/style.css" />
 	</head>
 	<body>
-		<nav class="navbar bg-body-tertiary">
-			<div class="container">
-				<a class="navbar-brand" href="#">
-					<img src="src/images/vlogo.png" alt="Logo" class="d-inline-block align-text-top" />
-				</a>
-			</div>
-		</nav>
 		<header>
-			<div id="leaves">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-			</div>
-			<div class="container">
-				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5 flex-mobile-column-reverse">
-					<div class="col-md-6">
-						<span class="fs-5 fw-bold clr-primary-muffed">Curso</span>
-						<h1 class="display-1 fw-bold">Dojo</h1>
-						<p class="lead fw-semibold clr-black-400 pb-5">
-							Domine a arte das Artes Marciais com nosso curso especializado!
-						</p>
-						<a href="#howitworks"><button class="btn btn-primary fs-4">Confira nosso material!</button></a>
-					</div>
-					<div class="col-md-6">
-						<img src="src/images/bg-hero.jpg" alt="" class="img-fluid rounded" />
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<div class="container d-flex justify-content-between align-items-center">
+						<a class="navbar-brand" href="#">
+							<img src="src/images/logo-dojo-shimahara.png" alt="" />
+						</a>
+						<ul class="navbar-nav ms-auto gap-4">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Início</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">História</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Cursos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Saiba mais</a>
+							</li>
+						</ul>
 					</div>
 				</div>
+			</nav>
+			<div id="carouselHeroCaptions" class="carousel slide">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselHeroCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselHeroCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselHeroCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="src/images/hero-1.jpg" class="d-block w-100" alt="..." />
+						<div class="carousel-caption d-none d-md-block text-start pb-5">
+							<h1>Dojo</h1>
+							<h1 class="text-primary">Shimahara</h1>
+							<p class="lead">
+								Descubra o caminho da disciplina e resiliência: <br />Conheça o nosso dojo e desperte o seu potencial!
+							</p>
+							<button type="button" class="btn btn-primary">Saiba mais!</button>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="src/images/hero-1.jpg" class="d-block w-100" alt="..." />
+						<div class="carousel-caption d-none d-md-block text-start pb-5">
+							<h1 class="text-primary">Título</h1>
+							<p class="lead">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quae placeat odit recusandae?
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="src/images/hero-1.jpg" class="d-block w-100" alt="..." />
+						<div class="carousel-caption d-none d-md-block text-start pb-5">
+							<h1 class="text-primary">Título</h1>
+							<p class="lead">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam expedita porro. Assumenda soluta
+								consectetur quasi officia, laboriosam modi tenetur vel obcaecati quae ipsam! Ut.
+							</p>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
 		</header>
+
 		<main>
-			<section class="about container section-spacer">
-				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5 flex-wrap">
-					<div class="row flex-mobile-column">
-						<div class="col col-md-6">
-							<img src="src/images/img-2.jpg" alt="" class="img-fluid rounded" />
+			<section class="history section-spacer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<img src="src/images/historia.png" alt="" />
 						</div>
-						<div class="col col-md-6">
-							<div class="row">
-								<h2 class="fw-bold display-5 my-3">
-									Sobre o que é o curso <span class="clr-primary-muffed">Dojo</span>?
-								</h2>
-								<p class="clr-black-600">
-									O conteúdo do curso abrange desde os fundamentos até técnicas avançadas. Vídeos, material de leitura e
-									recursos interativos enriquecem sua compreensão, garantindo que você não apenas aprenda os movimentos,
-									mas também compreenda os princípios subjacentes e a filosofia do Dojo.
+						<div class="col | mt-5 pt-5">
+							<h1>Introdução</h1>
+							<p>
+								A história do Japão é rica e complexa, estendendo-se por milênios. As primeiras evidências de
+								assentamentos humanos no Japão datam de cerca de 30.000 anos atrás. Ao longo dos séculos, o país passou
+								por várias fases históricas significativas. Durante o período Jomon (14.000 a.C. - 300 a.C.), as pessoas
+								eram caçadoras-coletoras e criavam cerâmica característica. Em seguida, o período Yayoi (300 a.C. - 300
+								d.C.) testemunhou a introdução da agricultura e a influência chinesa.
+							</p>
+							<p>
+								O Japão experimentou um período de centralização do poder sob a dinastia Yamato no século IV e V,
+								marcando o início de um estado centralizado. Os séculos seguintes viram o surgimento do xogunato e o
+								feudalismo, com os samurais desempenhando um papel central na sociedade e na política. O país passou por
+								séculos de guerra civil até que Tokugawa Ieyasu unificou o Japão no início do século XVII, dando início
+								ao período Edo, caracterizado por uma longa paz e isolamento do resto do mundo.
+							</p>
+							<p>
+								A abertura do Japão para o comércio com o Ocidente em meados do século XIX trouxe mudanças dramáticas. A
+								Restauração Meiji de 1868 marcou o fim do xogunato e o início de uma modernização acelerada,
+								transformando o Japão em uma potência industrial e militar. Isso culminou na Segunda Guerra Mundial, com
+								a rendição do Japão em 1945 após os bombardeios atômicos de Hiroshima e Nagasaki. Após a guerra, o país
+								passou por uma ocupação liderada pelos Estados Unidos e, em 1952, recuperou sua soberania. Desde então,
+								o Japão se tornou uma nação democrática altamente industrializada e uma influência significativa no
+								cenário global.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="history-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Samurais</h2>
+								<p>
+									Os samurais, guerreiros lendários do Japão feudal, têm uma história rica e fascinante que se estende
+									por séculos. Originando-se no século IX, eles evoluíram de uma classe de aristocratas que serviam à
+									corte imperial para se tornarem uma elite militar. Seu código de conduta, conhecido como Bushido,
+									enfatizava a lealdade, a coragem e a honra, e os samurais eram treinados desde jovens nas artes da
+									guerra e das artes tradicionais japonesas, como o iaido e o kenjutsu.
+								</p>
+								<p>
+									Durante o período Sengoku (Século XV a XVI), os samurais desempenharam um papel crucial nas lutas pelo
+									poder entre os senhores feudais. Com a unificação do Japão sob o xogunato Tokugawa no século XVII, a
+									paz relativa trouxe uma era de estabilidade, durante a qual muitos samurais se tornaram burocratas ou
+									mestres de artes marciais.
+								</p>
+								<p>
+									No século XIX, com a chegada dos estrangeiros e a modernização do Japão, a classe dos samurais entrou
+									em declínio. O governo Meiji aboliu oficialmente o sistema de classes samurais em 1871, levando muitos
+									deles a buscar novas ocupações. No entanto, a influência dos samurais na cultura japonesa perdurou, e
+									seu legado como símbolo de coragem, honra e disciplina continua a inspirar e fascinar as gerações
+									atuais.
+								</p>
+							</div>
+							<div class="col position-relative">
+								<img src="src/images/history-section-bg-1.png" alt="" class="history-section-bg" />
+								<img
+									src="src/images/history-section-img-1.png"
+									alt=""
+									class="history-section-img-rgt | position-absolute"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="history-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col position-relative">
+								<img src="src/images/history-section-bg-1.png" alt="" class="history-section-bg" />
+								<img
+									src="src/images/history-section-img-2.png"
+									alt=""
+									class="history-section-img history-section-img-lft | position-absolute"
+								/>
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Armas</h2>
+								<p>
+									A história das armas dos samurais é uma narrativa fascinante que reflete a evolução das técnicas de
+									combate e a profunda ligação entre armas e cultura no Japão feudal. A katana, uma espada curva de
+									lâmina afiada, é talvez a arma mais emblemática dos samurais, sendo venerada como uma extensão da alma
+									do guerreiro. Além disso, os samurais também empunhavam a wakizashi, uma espada curta, e o tanto, uma
+									faca de lâmina única, cada uma com seu propósito e significado na hierarquia samurai.
+								</p>
+								<p>
+									Além das espadas, os samurais eram mestres no uso de armas de arremesso, como shuriken, estrelas
+									ninja, e kunai, uma espécie de faca de arremesso. O arco japonês, conhecido como yumi, desempenhava um
+									papel crucial na habilidade dos samurais como arqueiros, enquanto a lança naginata era apreciada por
+									sua versatilidade no campo de batalha. Ao longo dos séculos, essas armas foram aprimoradas e adaptadas
+									às mudanças nas táticas de combate, mas o respeito pelas tradições e a maestria técnica no manuseio
+									dessas armas sempre foram fundamentais para a cultura e o código de honra dos samurais.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="history-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Geishas</h2>
+								<p>
+									As geishas são figuras icônicas da cultura japonesa, e sua história remonta a séculos de tradição e
+									elegância. Essas mulheres habilidosas são artistas multifacetadas, treinadas nas artes tradicionais
+									japonesas, como dança, música, poesia e cerimônia do chá. No entanto, o papel das geishas vai além do
+									entretenimento; elas desempenham um papel vital na preservação da cultura e da etiqueta japonesa.
+								</p>
+								<p>
+									Uma característica distintiva das geishas é a sua aparência elegante e refinada. Vestidas com quimonos
+									deslumbrantes e elaboradas penteados, elas cativam seus clientes com sua beleza e graça. Além disso,
+									sua habilidade em manter conversas interessantes e proporcionar um ambiente acolhedor faz delas as
+									anfitriãs perfeitas em festas e eventos sociais. Apesar de muitas vezes serem mal compreendidas como
+									prostitutas, as geishas são, na verdade, mestres na arte da hospitalidade e da cultura, desempenhando
+									um papel importante na preservação das tradições japonesas.
+								</p>
+							</div>
+							<div class="col position-relative">
+								<img src="src/images/history-section-bg-1.png" alt="" class="history-section-bg" />
+								<img
+									src="src/images/history-section-img-3.png"
+									alt=""
+									class="history-section-img-rgt | position-absolute"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="history-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col position-relative">
+								<img src="src/images/history-section-bg-1.png" alt="" class="history-section-bg" />
+								<img
+									src="src/images/history-section-img-4.png"
+									alt=""
+									class="history-section-img history-section-img-lft | position-absolute"
+								/>
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Seiza</h2>
+								<p>
+									O seiza é uma postura tradicional de sentar-se no Japão, que remonta a séculos de história e cultura
+									japonesa. Esta posição é caracterizada por ajoelhar-se no chão com as pernas dobradas sob o corpo,
+									mantendo os pés juntos e os glúteos descansando sobre os calcanhares. O seiza era originalmente uma
+									forma de demonstrar respeito e humildade em relação a figuras de autoridade, como nobres e líderes
+									religiosos.
+								</p>
+								<p>
+									Historicamente, o seiza era comum em cerimônias religiosas, rituais formais e encontros com
+									autoridades. No entanto, ao longo do tempo, tornou-se uma postura usada em diversos contextos sociais
+									e domésticos. Sentar-se dessa forma também era uma prática comum nas casas tradicionais japonesas,
+									onde as salas de tatame proporcionavam um ambiente adequado para o seiza.
+								</p>
+								<p>
+									Embora o seiza tenha perdido popularidade em alguns aspectos da vida moderna japonesa devido ao
+									desconforto prolongado que pode causar, ainda é considerado uma forma respeitosa de sentar-se em
+									muitas situações formais e cerimoniais. No entanto, as pessoas agora costumam usar almofadas ou bancos
+									baixos para tornar a posição mais confortável, mantendo o respeito pela tradição e etiqueta japonesa.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="about__learning container section-spacer">
-				<div class="d-flex flex-column justify-content-center align-items-center gap-5">
-					<div class="row my-5">
-						<h2 class="fw-bold display-5">No Dojo você aprenderá sobre</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-6 text-center">
-							<img src="src/images/img-2.jpg" alt="" class="w-50 rounded-circle" />
-							<h3 class="my-4 fw-bold">Judô</h3>
-						</div>
-						<div class="col-md-6 text-center">
-							<img src="src/images/img-4.jpg" alt="" class="w-50 rounded-circle" />
-							<h3 class="my-4 fw-bold">Aikidô</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 text-center">
-							<img src="src/images/img-1.jpg" alt="" class="w-50 rounded-circle" />
-							<h3 class="my-4 fw-bold">Karatê</h3>
-						</div>
-						<div class="col-md-6 text-center">
-							<img src="src/images/img-5.jpg" alt="" class="w-50 rounded-circle" />
-							<h3 class="my-4 fw-bold">Kendô</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="howitworks container section-spacer" id="howitworks">
-				<div class="d-flex flex-column justify-content-between align-items-center">
-					<div class="row">
-						<div class="col-md-6">
-							<h2 class="fw-bold display-5 mt-5 mb-3">
-								Entenda mais sobre<br />
-								a <span class="clr-primary-muffed">experiência</span> do seu curso!
-							</h2>
-							<p class="clr-black-600 py-2">
-								No mundo moderno, as possibilidades de aprendizado expandem-se além dos limites físicos. Com orgulho,
-								apresentamos nosso Curso online Dojo, uma oportunidade única de explorar as ricas tradições e técnicas
-								das artes marciais no conforto da sua casa.
-							</p>
-						</div>
-					</div>
-					<div class="row w-100 mt-5">
-						<div class="col-md-4 p-0 list-mobile">
-							<div class="list-group" id="list-tab" role="tablist">
-								<a
-									class="list-group-item list-group-item-action fw-bold active"
-									id="list-home-list"
-									data-bs-toggle="list"
-									href="#list-home"
-									role="tab"
-									aria-controls="list-home"
-									>APOIO DE PROFESSORES
-								</a>
-								<a
-									class="list-group-item list-group-item-action fw-bold"
-									id="list-profile-list"
-									data-bs-toggle="list"
-									href="#list-profile"
-									role="tab"
-									aria-controls="list-profile"
-									>MATERIAL DIDÁTICO</a
-								>
-								<a
-									class="list-group-item list-group-item-action fw-bold"
-									id="list-messages-list"
-									data-bs-toggle="list"
-									href="#list-messages"
-									role="tab"
-									aria-controls="list-messages"
-									>TUTORES ESPECIALISTAS</a
-								>
-								<a
-									class="list-group-item list-group-item-action fw-bold"
-									id="list-settings-list"
-									data-bs-toggle="list"
-									href="#list-settings"
-									role="tab"
-									aria-controls="list-settings"
-									>PALESTRAS</a
-								>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="tab-content" id="nav-tabContent">
-								<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-									<div class="row gap-5">
-										<div class="col">
-											<p class="fs-5">
-												Mestres que Inspiram: Cada um de nossos instrutores possui um profundo conhecimento e
-												experiência nas artes marciais, adquiridos ao longo de anos de treinamento e prática. Eles não
-												apenas ensinam técnicas; eles também são fontes de inspiração, demonstrando os valores
-												fundamentais do respeito, humildade e disciplina que permeiam o Dojo.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-									<div class="row gap-5">
-										<div class="col">
-											<p class="fs-5">
-												No Dojo você aprende com autonomia e de forma independente. Para isso, você conta com um
-												material didático completo, elaborado por professores curadores, que está disponível 24 horas
-												por dia em seu ambiente virtual de aprendizagem e pode ser acessado quando e onde quiser.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-									<div class="row gap-5">
-										<div class="col">
-											<p class="fs-5">
-												Nossos instrutores não apenas elogiam seus acertos, mas também fornecem feedback construtivo
-												para ajudá-lo a crescer. Eles observam seus movimentos, técnicas e posturas, oferecendo
-												orientação detalhada para refinar sua execução. Esse feedback orientado é fundamental para o seu
-												progresso contínuo.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-									<div class="row gap-5">
-										<div class="col">
-											<p class="fs-5">
-												Mentoria e Palestras: Nossos professores não são meramente figuras que você encontra apenas
-												durante as aulas. Eles se dedicam a construir relacionamentos significativos com os alunos,
-												tornando-se mentores que estão prontos para compartilhar conhecimento não apenas sobre as artes
-												marciais, mas também sobre a filosofia do Dojo, valores de vida e abordagens para superar
-												desafios.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="whatismartialarts container section-spacer">
-				<div class="d-flex justify-content-between align-items-center py-5 my-5 gap-5">
-					<div class="row">
-						<div class="col-md-6 col-md">
-							<h2 class="fw-bold display-5">Introdução</h2>
-							<p class="clr-black-600 py-2">
-								A maioria das artes marciais tradicionais japonesas, também conhecidas como budo, possui origens que
-								remontam a períodos proto-históricos. O Yabusame, uma prática de tiro com arco montado a cavalo, teve
-								seus primórdios no século VII. Com a ascensão da classe guerreira no final do século XII, os samurais,
-								membros desta classe, se dedicavam a várias disciplinas como kenjutsu (a arte da espada), iaijutsu
-								(simulação de combate com espadas), jujutsu (combate desarmado), kyujutsu (tiro com arco japonês),
-								sojutsu (uso de lanças), bajutsu (equitação), e suijutsu (natação). Com o tempo, essas práticas se
-								tornaram estandardizadas e eram ensinadas em escolas, tradição que continuou mesmo após o término do
-								período feudal durante a era Edo (1600-1868).
-							</p>
-							<p class="clr-black-600 py-2">
-								Após a abolição do sistema de classes sociais durante a era Edo e até a Restauração Meiji em 1868, as
-								classes guerreiras, que haviam exercido controle sobre agricultores, artesãos e comerciantes (o sistema
-								shi-no-ko-sho), desapareceram. Com a adoção de armamentos militares modernos, o engajamento em algumas
-								dessas disciplinas começou a declinar. Em 1895, após a Guerra Sino-Japonesa, uma organização nacional
-								conhecida como "Dai Nippon Budo Kai" (Associação de Artes Marciais do Japão) emergiu para centralizar as
-								artes marciais e considerar sua possível inclusão no sistema educacional. Isso resultou no renascimento
-								de muitas dessas práticas.
-							</p>
-							<p class="clr-black-600 py-2">
-								A partir de abril de 2012, aos alunos dos últimos três anos do ensino fundamental, independentemente de
-								gênero, foi solicitado que escolhessem uma das três artes marciais - sumô, judô ou kendô - como parte do
-								currículo escolar.
-							</p>
-						</div>
-						<div class="col-md-6">
-							<!-- Youtube Video Import -->
-							<iframe
-								width="560"
-								height="515"
-								src="https://www.youtube.com/embed/vApvRSHtu-s?si=dKPxffIZw_iNdJne"
-								title="YouTube video player"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen
-								class="w-100 my-5"
-							></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="modalities section-spacer">
-				<div class="d-flex flex-column justify-content-between align-items-center py-5 my-5">
-					<div class="row mb-5 pb-5">
-						<h2 class="fw-bold display-5">Principais Modalidades</h2>
-					</div>
-					<div class="container-fluid bg-light">
-						<div class="row container mx-auto">
-							<div class="d-flex justify-content-center gap-5">
-								<div class="row">
-									<div class="col-md-6">
-										<img src="src/images/img-3.jpg" alt="" class="img-fluid" />
-									</div>
-									<div class="col-md-6 py-5">
-										<h3 class="fw-bold clr-primary-muffed">Judô</h3>
-										<p class="clr-black-600 py-2">
-											"Judô," que significa "caminho suave," surgiu da antiga arte de jujutsu, focada em técnicas
-											desarmadas. As escolas Tenshin Shinyo e Kito formaram a base do judô Kodokan moderno, moldado por
-											Kano Jigoro (1860-1938). Ele adaptou regras para permitir agarramentos e quedas. O "judô-gi"
-											lembra o traje de karatê, mas com material resistente. Diferentemente do karatê, o judô não
-											permite chutes. O esporte ganhou popularidade global. A Federação Internacional de Judô foi criada
-											em 1952. Tóquio hospedou o primeiro Campeonato Mundial em 1956. Tornou-se esporte olímpico em 1964
-											(homens) e mais tarde para mulheres. Atualmente, mais de 5 milhões praticam judô.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid bg-dark text-white">
-						<div class="row container mx-auto">
-							<div class="d-flex justify-content-center gap-5">
-								<div class="row flex-mobile-column-reverse">
-									<div class="col-md-6 py-5">
-										<h3 class="fw-bold clr-primary-muffed">Aikidô</h3>
-										<p class="py-2">
-											O aikidô surge do Aiki jujutsu da escola Daito, fundada por Minamoto Yoshimitsu (1045-1127).
-											Ueshiba Morihei (1883-1970) é seu criador contemporâneo. Comparado ao judô, o aikidô evita agarrar
-											e mantém distância entre os lutadores. Técnicas focam fraquezas nos punhos e braços do oponente.
-											Não há competições no aikidô; autodefesa é primordial. Popular entre mulheres e profissionais de
-											segurança.
-										</p>
-									</div>
-									<div class="col-md-6">
-										<img src="src/images/img-4.jpg" alt="" class="img-fluid" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid bg-light">
-						<div class="row container mx-auto">
-							<div class="d-flex justify-content-center gap-5">
-								<div class="row flex-mobile-column">
-									<div class="col-md-6">
-										<img src="src/images/img-1.jpg" alt="" class="img-fluid" />
-									</div>
-									<div class="col-md-6 py-5">
-										<h3 class="fw-bold clr-primary-muffed">Karatê</h3>
-										<p class="clr-black-600 py-2">
-											O karatedo, "caminho das mãos vazias", originou-se há mil anos na China, chegando a Okinawa para
-											defesa sem armas e, posteriormente, ao Japão com Funakoshi Gichin nos anos 1920. Todas as partes
-											do corpo são potenciais armas, mas defesa contra socos e chutes é crucial. Treinamento inclui
-											golpes em makiwara (poste revestido de palha). Em competições, protetores são usados para evitar
-											acidentes; socos e chutes em região da cabeça são evitados. Kata avalia forma e concentração.
-											Instrutores enfatizam atitudes e código de conduta. Mais mulheres praticam karatê atualmente, que,
-											como artes marciais chinesas e coreanas, ganha popularidade global. Praticantes estimados em 50
-											milhões.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid bg-dark text-white">
-						<div class="row container mx-auto">
-							<div class="d-flex justify-content-center gap-5">
-								<div class="row flex-mobile-column-reverse">
-									<div class="col-md-6 py-5">
-										<h3 class="fw-bold clr-primary-muffed">Kendô</h3>
-										<p class="py-2">
-											Entre os samurais, o uso da espada era considerado um dos principais elementos das artes marciais.
-											Talvez devido a sua tradição, o kendô (bastão ou vara japonesa) atribui uma elevada ênfase no
-											comportamento ritual sobre o dojo, e as suas práticas devem ser altamente regulamentadas.
-										</p>
-										<p class="py-2">
-											Com o estabelecimento da Federação Geral de Kendô do Japão, em 1952, o kendô ressurgiu como
-											esporte e foi introduzido no currículo escolar nas escolas. A ‘espada’ usada no kendô, chamada de
-											shinai, é feita de quatro estacas de bambu. Ela é razoavelmente leve e elaborada para se evitar
-											contusões graves durante as práticas.
-										</p>
-									</div>
-									<div class="col-md-6">
-										<img src="src/images/img-5.jpg" alt="" class="img-fluid" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="container section-spacer">
-				<div class="d-flex flex-column justify-content-between align-items-center py-5 my-5">
-					<div class="row mb-5 pb-5">
-						<h2 class="fw-bold display-5">Para saber mais</h2>
-					</div>
-					<div class="row mx-auto">
-						<div class="d-flex justify-content-center gap-5">
-							<div class="row flex-mobile-column-reverse">
-								<div class="col-md-6 py-5">
-									<h3>Prática Individual e Treinamento Adicional</h3>
-									<p>
-										Além das aulas em grupo, reserve tempo para treinar individualmente. Repetir movimentos, aprimorar
-										posturas e fortalecer seu corpo por meio de exercícios complementares contribui para o
-										aperfeiçoamento das habilidades. Utilize vídeos tutoriais e recursos online recomendados pelos
-										instrutores para obter orientação em sua prática individual.
-									</p>
-								</div>
-								<div class="col-md-6">
-									<img src="src/images/img-7.jpg" alt="" class="img-fluid" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row mx-auto">
-						<div class="d-flex justify-content-center gap-5">
-							<div class="row flex-mobile-column-reverse">
-								<div class="col-md-6 py-5">
-									<h3>Estudo e Pesquisa</h3>
-
-									<p>
-										Explore a rica história e filosofia das artes marciais através da leitura e pesquisa. Livros,
-										artigos e documentários oferecem insights sobre as origens, os mestres e as diferentes abordagens
-										das artes marciais. Compreender a filosofia subjacente pode aprofundar seu entendimento e enriquecer
-										sua prática.
-									</p>
-								</div>
-								<div class="col-md-6">
-									<img src="src/images/img-8.jpg" alt="" class="img-fluid" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row mx-auto">
-						<div class="d-flex justify-content-center gap-5">
-							<div class="row flex-mobile-column-reverse">
-								<div class="col py-5">
-									<h3>Autodisciplina e Mentalidade de Crescimento</h3>
-									<p>
-										Cultive uma mentalidade de crescimento, esteja aberto a feedback construtivo e não tenha medo de
-										enfrentar desafios. A autodisciplina é essencial; estabeleça metas realistas para monitorar seu
-										progresso e ajustar suas estratégias de aprendizado conforme necessário.
-									</p>
-								</div>
-								<div class="col">
-									<img src="src/images/img-6.jpg" alt="" class="img-fluid" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="quiz container-fluid section-spacer">
-				<div class="d-flex flex-column justify-content-between align-items-center py-5 my-5 container">
-					<div class="row mb-5 pb-5 text-center">
-						<h2 class="fw-bold display-5">QUIZ</h2>
-						<p>Agora chegou a hora de você mostrar o que aprendeu!</p>
-					</div>
-					<div class="accordion w-100" id="accordionExample">
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseOne"
-									aria-expanded="true"
-									aria-controls="collapseOne"
-								>
-									Questão 1
-								</button>
-							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">
-										Qual das seguintes artes marciais se originou no Japão e enfatiza a autodefesa, além de técnicas de
-										agarramento e arremesso?
-									</h5>
-									<p class="clr-black-600">a) Karatê</p>
-									<p class="clr-black-600">b) Taekwondo</p>
-									<p class="clr-black-600">c) Judô</p>
-									<p class="clr-black-600">d) Kung Fu</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: c) Judo"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo"
-									aria-expanded="false"
-									aria-controls="collapseTwo"
-								>
-									Questão 2
-								</button>
-							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">Qual é o significado do termo "aikidô" nas artes marciais?</h5>
-									<p class="clr-black-600">a) Caminho das Mãos Vazias</p>
-									<p class="clr-black-600">b) Caminho do Arco e Flecha</p>
-									<p class="clr-black-600">c) Caminho do Corpo Flexível</p>
-									<p class="clr-black-600">d) Caminho da Água e Fogo</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: a) Caminho das Mãos Vazias"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseThree"
-									aria-expanded="false"
-									aria-controls="collapseThree"
-								>
-									Questão 3
-								</button>
-							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">
-										Quais das seguintes artes marciais envolvem o uso de uma espada de bambu chamada "shinai"?
-									</h5>
-									<p class="clr-black-600">a) Kung Fu</p>
-									<p class="clr-black-600">b) Kendo</p>
-									<p class="clr-black-600">c) Jujutsu</p>
-									<p class="clr-black-600">d) Capoeira</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: b) Kendo"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFour"
-									aria-expanded="false"
-									aria-controls="collapseFour"
-								>
-									Questão 4
-								</button>
-							</h2>
-							<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">
-										O que o termo "kumite" representa em muitas artes marciais, como o karatê?
-									</h5>
-									<p class="clr-black-600">a) Treinamento com armas</p>
-									<p class="clr-black-600">b) Formas coreografadas</p>
-									<p class="clr-black-600">c) Combate com sparring</p>
-									<p class="clr-black-600">d) Exercícios de alongamento</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: c) Combate com sparring"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFive"
-									aria-expanded="false"
-									aria-controls="collapseFive"
-								>
-									Questão 5
-								</button>
-							</h2>
-							<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">
-										Qual das seguintes artes marciais enfatiza o uso de chutes altos e acrobáticos, e é conhecida por
-										suas técnicas de chutes voadores?
-									</h5>
-									<p class="clr-black-600">a) Kung Fu</p>
-									<p class="clr-black-600">b) Judo</p>
-									<p class="clr-black-600">c) Muay Thai</p>
-									<p class="clr-black-600">d) Taekwondo</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: d) Taekwondo"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseSix"
-									aria-expanded="false"
-									aria-controls="collapseSix"
-								>
-									Questão 6
-								</button>
-							</h2>
-							<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<h5 class="clr-black-600 mt-4 mb-3">O que é "kata" nas artes marciais?</h5>
-									<p class="clr-black-600">a) Combate livre sem regras</p>
-									<p class="clr-black-600">b) Técnica de defesa pessoal</p>
-									<p class="clr-black-600">c) Uma série de movimentos pré-determinados</p>
-									<p class="clr-black-600">d) Uso de armas tradicionais</p>
-
-									<div class="my-5">
-										<a
-											tabindex="0"
-											class="btn btn-lg btn-danger"
-											role="button"
-											data-bs-toggle="popover"
-											data-bs-trigger="focus"
-											data-bs-content="Resposta correta: c) Uma série de movimentos pré-determinados"
-											>Conferir resposta</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="bibliography mb-5 section-spacer">
+			<section class="dojo section-spacer">
 				<div class="container">
-					<div class="row my-5">
+					<div class="row">
 						<div class="col">
-							<h2 class="fw-bold display-5">Referências Bibliográficas</h2>
+							<img src="src/images/dojo.png" alt="" />
+						</div>
+						<div class="col | mt-5 pt-5">
+							<h1>Introdução</h1>
+							<p>DOJO - em japonês: significa “Local do caminho”.</p>
+							<p>É o local onde se treinam artes marciais japonesas (Bujutsu).</p>
+							<p>
+								No Dojo Shimahara criamos um ambiente seguro e cercado de respeito, onde o praticante tem a oportunidade
+								de conhecer a si mesmo, observando seu comportamento diante de um embate.
+							</p>
+							<p>Entendemos que a luta é uma excelente ferramenta de autoconhecimento.</p>
+							<p>
+								Mais do que ensinar técnicas de defesa pessoal, queremos forjar nos alunos o espírito de combate,
+								essencial para saber como lidar com os desafios do dia-a-dia.
+							</p>
 						</div>
 					</div>
-					<div class="row my-3">
-						<h5>DA ANTIGA TRADIÇÃO AOS ESPORTES MODERNOS</h5>
-						<p>
-							Embaixada do Japão no Brasil, 2012. <br />
-							Disponível em:
-							<a href="https://www.br.emb-japan.go.jp/cultura/artesmarciais.html"
-								>https://www.br.emb-japan.go.jp/cultura/artesmarciais.html</a
-							>
-							<br />Acesso em: 24 de agosto 2023.
-						</p>
+				</div>
+				<section class="eduardo-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>
+									Quem foi <br />
+									<span class="text-primary">Eduardo <br />Shimahara?</span>
+								</h2>
+								<p>
+									Eduardo Shimahara foi uma pessoa diferenciada, querida e admirada por todos, que ajudou a escrever a
+									história da Ânima Educação desde a sua fundação. Shima, como carinhosamente o chamávamos, representava
+									a evolução, a transformação, a transmutação e a abertura para o novo.
+								</p>
+								<p class="text-primary">“Vai! E, se der medo, vai com medo mesmo!”</p>
+							</div>
+							<div class="col">
+								<img src="src/images/eduardo-shimahara.jpg" alt="" class="history-section-bg" />
+							</div>
+						</div>
 					</div>
-					<div class="row my-3">
-						<h5>DOJO, ESCOLA OU ACADEMIA DE ARTES MARCIAIS?</h5>
-						<p>
-							DINIZ, Fábio. Academia Dragão Chinês, 2020. <br />
-							Disponível em:
-							<a href="https://www.academiadragaochines.com.br/post/dojo-escola-ou-academia-de-artes-marciais"
-								>https://www.academiadragaochines.com.br/post/dojo-escola-ou-academia-de-artes-marciais</a
-							>
-							<br />
-							Acesso em: 24 de agosto 2023.
-						</p>
+				</section>
+				<section class="gallery-section | container-fluid">
+					<div class="container">
+						<div class="row | mb-5">
+							<h2 class="title-border">Galeria de Imagens</h2>
+						</div>
+						<div class="gallery">
+							<div class="box box-1"></div>
+							<div class="box box-2"></div>
+							<div class="box box-3"></div>
+							<div class="box box-4"></div>
+							<div class="box box-5"></div>
+						</div>
+					</div>
+				</section>
+				<section class="testimonials-section | container-fluid">
+					<div class="container">
+						<div class="row | mb-5">
+							<h2 class="title-border">Depoimentos</h2>
+						</div>
+						<div class="row">
+							<div class="col d-flex flex-column align-items-center | gap-3">
+								<img src="src/images/testimonials-1.png" alt="" class="w-25" />
+								<h3>Marcelo Battistella Bueno</h3>
+								<blockquote class="testimonials__paragraph | fst-italic text-center">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi consequuntur provident
+									debitis quis. Rerum vero vitae corrupti ratione pariatur praesentium non officiis laboriosam
+									dignissimos.
+								</blockquote>
+							</div>
+							<div class="col d-flex justify-content-end w-100">
+								<iframe
+									src="https://player.vimeo.com/video/876439722?h=0396b006dc&title=0&byline=0&portrait=0"
+									width="540"
+									height="360"
+									frameborder="0"
+									allow="autoplay; fullscreen; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="courses section-spacer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<img src="src/images/martial-arts-section.png" alt="" />
+						</div>
+						<div class="col | mt-5 pt-5">
+							<h1>Objetivo</h1>
+							<p class="text-goal">
+								Formar o ser humano pela unificação e fortalecimento do corpo, mente e espírito por meio de árduo
+								treinamento e rigorosa disciplina da mente, do corpo e do espírito de forma integrada.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Aikido</h2>
+								<p>
+									Aikido - em japonês: 合気道 significa
+									<strong>"o caminho da unificação (com) da energia da vida"</strong>, ou
+									<strong>"o caminho do espírito harmonioso".</strong>
+								</p>
+								<p>É uma arte marcial japonesa desenvolvida pelo mestre <strong>Morihei Ueshiba.</strong></p>
+							</div>
+							<div class="col">
+								<img src="src/images/martial-arts-img-1.jpg" alt="" class="courses-img-rgt" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="src/images/martial-arts-img-2.jpg" alt="" class="courses-img-rgt" />
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>KARATEDO</h2>
+								<p>Karatedo- em japonês: 空手道 significa “caminho das mãos vazias”.</p>
+								<p>É uma arte marcial japonesa desenvolvida pelo mestre Gishin Funakoshi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>JUDO</h2>
+								<p>Judo– em Japonês: 柔道 significa “caminho suave” ou “caminho da suavidade”.</p>
+								<p>É arte marcial criada no Japão pelo mestre Jigoro Kano.</p>
+							</div>
+							<div class="col">
+								<img src="src/images/martial-arts-img-3.jpg" alt="" class="courses-img-rgt" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="src/images/martial-arts-img-4.jpg" alt="" class="courses-img-rgt" />
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>TAI CHI CHUAN</h2>
+								<p>Tai Chi Chuan - O termo chinês para “arte marcial” é “Wushu”.</p>
+								<p>O Tàijìquán 太 極 拳 (Tai Chi Chuan): significa “firme como uma montanha, suave como o vento”.</p>
+								<p>
+									É uma arte marcial interna chinesa que busca a integração do praticante com si mesmo e com o todo a
+									sua volta.
+								</p>
+								<p>
+									Tàijí é a interação entre Yīn e Yáng, as energias primordiais que geram e sustentam todas as
+									manifestações. Tàijí também significa 'eixo', o eixo que conecta e sustenta as transformações do Yīn e
+									do Yáng. Quán significa 'punho', fazendo alusão à marcialidade.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>TAIKYOKU-KEN</h2>
+								<p>O Taikyoku-ken é uma ramificação japonesa do Tai Chi Chuan, originário da China.</p>
+								<p>
+									Pode ser descrito como uma espécie dança, lenta e fluída. Através de gestos suaves e contínuos,
+									intrinsecamente conectados a respiração, manipulamos a energia do próprio corpo e tentamos diluir a
+									percepção do ego, que nos impede de perceber que somos parte de um Universo muito maior.
+								</p>
+							</div>
+							<div class="col">
+								<img src="src/images/martial-arts-img-5.jpg" alt="" class="courses-img-rgt" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="src/images/martial-arts-img-6.jpg" alt="" class="courses-img-rgt" />
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>JU-JUTSU</h2>
+								<p>Ju – Jutsu - Em japonês: 柔術 que significa “técnica suave”.</p>
+								<p>
+									É uma arte marcial japonesa também considerada como um método de auto-conhecimento, oferecendo lições
+									adequadas ao cotidiano, se tornando uma grande metáfora da própria vida.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<img src="src/images/martial-arts-section.png" alt="" />
+						</div>
+						<div class="col | mt-5 pt-5">
+							<h1>Objetivo</h1>
+							<p class="text-goal">
+								Formar o ser humano pela unificação e fortalecimento do corpo, mente e espírito por meio de árduo
+								treinamento e rigorosa disciplina da mente, do corpo e do espírito de forma integrada.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Yoga chikitsa krama – Yoga terapia</h2>
+								<p>
+									A yoga terapia tem por base uma prática simples, com Intervenções personalizadas e as múltiplas
+									ferramentas do yoga são adaptadas para atender às necessidades e capacidades individuais, tornando o a
+									yoga terapia do método da escola KYM um dos mais renomados do mundo.
+								</p>
+								<p>
+									Construímos uma prática pessoal para cada pessoa entendendo os cuidados necessários, buscando
+									prevenções e remediações no estilo de vida como questões musculoesqueléticos, cardíacas, problemas
+									metabólicos, distúrbios cognitivos e psicológicos, problemas geriátricos, condições autoimunes,
+									distúrbios digestivos, depressão e ansiedade, condições neurológicas e outras mais.
+								</p>
+							</div>
+							<div class="col">
+								<img src="src/images/martial-arts-img-7.jpg" alt="" class="courses-img-rgt" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="src/images/martial-arts-img-8.jpg" alt="" class="courses-img-rgt" />
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>SwáSthya yoga</h2>
+								<p>
+									É a sistematização do Yôga pré-clássico, com origens que datam mais de cinco mil anos na região do
+									vale do Indo.
+								</p>
+								<p>
+									Suas principais características são a prática integral e completa em oito partes, o encadeamento de
+									técnicas de forma coreográfica e as regras gerais de execução.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<img src="src/images/martial-arts-section.png" alt="" />
+						</div>
+						<div class="col | mt-5 pt-5">
+							<h1>Objetivo</h1>
+							<p class="text-goal">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum voluptate ratione nisi dolorem
+								consectetur officiis excepturi id. Odit repellendus quos id qui, rem magni cum accusantium
+								necessitatibus quisquam quidem doloribus atque voluptas eum quis iste repudiandae enim, sit dolorum
+								nostrum, porro est expedita accusamus cupiditate incidunt! Ad, voluptas obcaecati?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Shiatsu</h2>
+								<p>
+									Shiatsu é uma técnica de massagem terapêutica que visa o equilíbrio entre corpo e mente através da
+									pressão dos dedos ou das palmas das mãos em determinadas áreas do corpo.
+								</p>
+								<p>Pode prevenir doenças e amenizar problemas, como estresse e ansiedade.</p>
+							</div>
+							<div class="col">
+								<img src="src/images/martial-arts-img-9.jpg" alt="" class="courses-img-rgt" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-section | container-fluid position-relative">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="src/images/martial-arts-img-10.jpg" alt="" class="courses-img-rgt" />
+							</div>
+							<div class="col">
+								<div class="flag position-absolute"></div>
+								<h2>Reiki</h2>
+								<p>
+									Reiki significa energia vital universal, é uma técnica criada no Japão que consiste na imposição de
+									mãos para transferência dessa energia a fim de equilibrar corpo, mente e emoções.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="schedules container-fluid">
+					<div class="container">
+						<div class="row | mb-5">
+							<h2 class="title-border schedules-title">Horários</h2>
+						</div>
+						<div class="row">
+							<p class="lead schedules-paragraph mb-5">
+								Além das atividades do dojo temos sessões de
+								<span class="fw-bold">shiatsu, quick massage, acupuntura e Reiki</span> em sessões individuais.
+							</p>
+						</div>
+						<div class="row">
+							<table class="table border text-center shadow mb-5">
+								<thead>
+									<tr>
+										<th class="table-header border" scope="col">Datas/Horários</th>
+										<th class="table-header border" scope="col">2ª</th>
+										<th class="table-header border" scope="col">3ª</th>
+										<th class="table-header border" scope="col">4ª</th>
+										<th class="table-header border" scope="col">5ª</th>
+										<th class="table-header border" scope="col">6ª</th>
+										<th class="table-header border" scope="col">Sábado</th>
+										<th class="table-header border" scope="col">Domingo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">7:00 às 8:15</th>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Wlamir
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Wlamir
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">7:30 às 8:30</th>
+										<td class="table-primary">Meditação</td>
+										<td></td>
+										<td class="table-primary">Meditação</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">8:30 às 9:30</th>
+										<td></td>
+										<td class="table-primary">
+											Tàijí quán <br />
+											Sifu Felipe
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Tàijí quán <br />
+											Sifu Felipe
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">8:45 às 9:45</th>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Ju-jutsu <br />
+											Sensei Jean
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Ju-jutsu <br />
+											Sensei Jean
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">
+											10:00 às 11:15 <br />
+											10:30 às 11:30
+										</th>
+										<td class="table-primary">
+											Taikyoku-ken <br />
+											Sensei Daniel
+										</td>
+										<td class="table-primary">
+											Judo <br />
+											Sensei Carlos
+										</td>
+										<td class="table-primary">
+											Taikyoku-ken <br />
+											Sensei Daniel
+										</td>
+										<td class="table-primary">
+											Judo <br />
+											Sensei Carlos
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">11:00 às 12:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="table-primary">
+											Ju-jutsu <br />
+											Sensei Paulo
+										</td>
+										<td class="table-primary">
+											Ju-jutsu <br />
+											Sensei Paulo
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">12:00 às 13:15</th>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Guilhermo
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Guilhermo
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">17:00 às 18:00</th>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Daniel
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Daniel
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">18:15 às 19:15</th>
+										<td class="table-primary">
+											Yoga chikitsa krama <br />
+											Prof. Helio
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Yoga chikitsa krama <br />
+											Prof. Helio
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">19:00 às 20:15</th>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Guilhermo
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Guilhermo
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">19:30 às 20:45</th>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Wlamir
+										</td>
+										<td></td>
+										<td class="table-primary">
+											Aikido <br />
+											Sensei Wlamir
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">20:15 às 21:15</th>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Swasthya yoga <br />
+											Prof. Nery
+										</td>
+										<td class="table-primary">
+											Karatedo <br />
+											Sensei Trindade
+										</td>
+										<td class="table-primary">
+											Swasthya yoga <br />
+											Prof. Nery
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="extra-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-3 extra-content-header">
+							<img src="src/images/saiba-mais-bg.jpg" alt="" />
+						</div>
+						<div class="col-9">
+							<div class="card w-100 shadow">
+								<img src="src/images/saiba-mais-img-1.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title fs-3">DIA DO SAMURAI</h5>
+									<p class="card-text">Veja 7 filmes que conquistaram o cinema.</p>
+								</div>
+							</div>
+							<div class="card w-100 shadow mt-5">
+								<img src="src/images/saiba-mais-img-2.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title fs-3">CURIOSIDADES SOBRE A KATANA</h5>
+									<p class="card-text">Saiba mais sobre a principal arma utilizada pelos samurais.</p>
+								</div>
+							</div>
+							<div class="card w-100 shadow my-5">
+								<img src="src/images/saiba-mais-img-3.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title fs-3">SOBRE OS QUIMONOS</h5>
+									<p class="card-text">Conheça os trajes tradicionais do Japão.</p>
+								</div>
+							</div>
+							<div class="card w-100 shadow">
+								<img src="src/images/saiba-mais-img-4.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title fs-3">OJIGI: A ARTE JAPONESA DA REVERÊNCIA</h5>
+									<p class="card-text">Por que os japoneses tem o hábito de se curvar? Saiba mais aqui.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer>
-			<div class="bg-dark p-5"></div>
+
+		<footer class="mt-5">
+			<div class="container">
+				<p>Dojo Shimahara | © Todos os direitos reservados.</p>
+			</div>
 		</footer>
-		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="src/style/js/custom.js"></script>
+
+		<script src="src/js/bootstrap.bundle.min.js"></script>
+		<script src="https://player.vimeo.com/api/player.js"></script>
 	</body>
 </html>
