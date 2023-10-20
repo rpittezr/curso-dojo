@@ -153,7 +153,7 @@ p {
 
 /* Start Testimonials */
 .testimonials-section {
-	background-image: url(/src/images/texture-bg.jpg);
+	background-image: url(../images/texture-bg.jpg);
 	margin-block: 6rem;
 	padding-block: 4rem;
 }
@@ -202,19 +202,19 @@ p {
 	align-items: center;
 }
 .box-1 {
-	background-image: url(/src/images/gallery-1.jpeg);
+	background-image: url(../images/gallery-1.jpeg);
 }
 .box-2 {
-	background-image: url(/src/images/gallery-2.jpeg);
+	background-image: url(../images/gallery-2.jpeg);
 }
 .box-3 {
-	background-image: url(/src/images/gallery-3.jpeg);
+	background-image: url(../images/gallery-3.jpeg);
 }
 .box-4 {
-	background-image: url(/src/images/gallery-4.jpeg);
+	background-image: url(../images/gallery-4.jpeg);
 }
 .box-5 {
-	background-image: url(/src/images/gallery-5.jpeg);
+	background-image: url(../images/gallery-5.jpeg);
 }
 .gallery:hover .box {
 	filter: grayscale(100%) opacity(24%);
@@ -257,7 +257,7 @@ p {
 .courses-section {
 	background-color: var(--clr-neutral-400);
 	border-top: 6px solid var(--clr-primary-400);
-	background-image: url(/src/images/courses-bg.png);
+	background-image: url(../images/courses-bg.png);
 	background-size: cover;
 }
 .courses-img-rgt {
