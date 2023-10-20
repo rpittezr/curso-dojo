@@ -1,0 +1,307 @@
+:root {
+	/* Colors */
+	--clr-primary-400: #e23b3b;
+	--clr-neutral-400: #1a1a1a;
+	--clr-white: #fffafa;
+	/* Border */
+	--border-red: solid 6px #e23b3b;
+	--border-red-hover: inset 0 -4px 0 0 #e23b3b;
+	--border-red-title: solid 2rem #e23b3b;
+}
+
+body {
+	font-family: Inter, sans-serif;
+}
+
+/* Start General Elements */
+h1 {
+	font-size: 4rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: Caudex, serif;
+	font-weight: bold;
+	color: var(--clr-neutral-400);
+}
+h2 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.title-border {
+	border-inline-start: var(--border-red-title);
+	padding-inline-start: 1rem;
+	margin-inline-start: 1rem;
+	line-height: 5rem;
+}
+
+.section-spacer {
+	margin-block: 5rem;
+}
+
+/* End General Elements */
+
+/* Start Navbar */
+.navbar {
+	min-height: 140px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-top: var(--border-red);
+	box-sizing: border-box;
+}
+
+@media (max: 768px) {
+	.navbar {
+		height: auto;
+	}
+}
+
+.nav-link {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	box-shadow: var(--border-red-hover);
+	transition: 300ms;
+}
+/* End Navbar */
+
+/* Start Hero Section */
+.carousel-inner h1,
+p {
+	color: var(--clr-white);
+}
+
+.carousel-inner button {
+	padding-inline: 3rem;
+	border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+	.carousel-caption {
+		bottom: 10rem;
+	}
+}
+/* End Hero Section */
+
+/* Start History */
+.history p {
+	color: var(--clr-neutral-400);
+}
+
+.history h2 {
+	margin-block-start: 8rem;
+}
+
+.history-section {
+	background-color: #e9dbd2;
+	border-top: 6px solid var(--clr-neutral-400);
+	margin-block: 8rem;
+}
+
+.flag {
+	width: 86px;
+	height: 140px;
+	top: -2rem;
+	background-color: var(--clr-primary-400);
+}
+
+.history-section-bg {
+	max-height: 720px;
+}
+.history-section-img-rgt {
+	right: 0;
+	bottom: 0;
+}
+
+.history-section-img-lft {
+	left: 111px;
+	bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.history-section-img-rgt {
+		min-height: 920px;
+	}
+
+	.history-section-img-lft {
+		left: 111px;
+		min-height: 860px;
+	}
+}
+/* End History */
+
+/* Start Dojo Shimahara */
+.dojo p {
+	color: var(--clr-neutral-400);
+}
+
+.eduardo-section {
+	background-color: var(--clr-neutral-400);
+	border-top: 6px solid var(--clr-primary-400);
+}
+
+.eduardo-section h2 {
+	margin-block-start: 8rem;
+}
+
+.eduardo-section p {
+	color: var(--clr-white);
+}
+/* End Dojo Shimahara */
+
+/* Start Testimonials */
+.testimonials-section {
+	background-image: url(/src/images/texture-bg.jpg);
+	margin-block: 6rem;
+	padding-block: 4rem;
+}
+.testimonials__paragraph {
+	line-height: 1.5rem;
+}
+
+.testimonials__paragraph::before {
+	content: open-quote;
+	margin-inline-end: 1rem;
+}
+.testimonials__paragraph::after {
+	content: close-quote;
+}
+.testimonials__paragraph::before,
+.testimonials__paragraph::after {
+	display: inline-block;
+	vertical-align: bottom;
+	color: var(--clr-primary-400);
+	font-size: 4em;
+	top: 0.2em;
+	position: relative;
+}
+/* End Testimonials */
+
+/* Start Gallery Section */
+.gallery-section {
+	margin-block: 6rem;
+}
+.gallery {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1rem;
+	width: 100%;
+	height: 500px;
+	transition: all 400ms;
+}
+.box {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	transition: all 400ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-1 {
+	background-image: url(/src/images/gallery-1.jpeg);
+}
+.box-2 {
+	background-image: url(/src/images/gallery-2.jpeg);
+}
+.box-3 {
+	background-image: url(/src/images/gallery-3.jpeg);
+}
+.box-4 {
+	background-image: url(/src/images/gallery-4.jpeg);
+}
+.box-5 {
+	background-image: url(/src/images/gallery-5.jpeg);
+}
+.gallery:hover .box {
+	filter: grayscale(100%) opacity(24%);
+}
+.gallery .box:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+.gallery:has(.box-1:hover) {
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+.gallery:has(.box-2:hover) {
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+.gallery:has(.box-3:hover) {
+	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+.gallery:has(.box-4:hover) {
+	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+.gallery:has(.box-5:hover) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+/* End Gallery Section */
+
+/* Start Courses Section */
+
+.courses p {
+	color: var(--clr-white);
+}
+
+.courses h2 {
+	margin-block-start: 8rem;
+	color: var(--clr-primary-400);
+}
+
+.text-goal {
+	color: var(--clr-neutral-400) !important;
+}
+
+.courses-section {
+	background-color: var(--clr-neutral-400);
+	border-top: 6px solid var(--clr-primary-400);
+	background-image: url(/src/images/courses-bg.png);
+	background-size: cover;
+}
+.courses-img-rgt {
+	border-right: 6px solid var(--clr-primary-400);
+}
+.courses-img-lft {
+	border-right: 6px solid var(--clr-primary-400);
+}
+/* End Courses Section */
+
+/* Start Extra Content */
+.card {
+	border-left: 6px solid var(--clr-primary-400);
+	border-radius: 0;
+}
+.card-img-top {
+	border-radius: 0;
+}
+.card img {
+	border-left: 24px solid var(--clr-primary-400);
+}
+.card-text {
+	color: var(--clr-neutral-400);
+}
+
+/* Start Schedules Section */
+.schedules {
+	background-color: #e9dbd2;
+}
+
+.schedules-title,
+.schedules-paragraph {
+	color: var(--clr-neutral-400) !important;
+}
+.table-header {
+	background-color: var(--clr-primary-400) !important;
+}
+
+/* Start Footer */
+footer {
+	background-color: var(--clr-neutral-400);
+}
+footer p {
+	padding: 32px;
+	text-align: center;
+	margin: 0;
+}
